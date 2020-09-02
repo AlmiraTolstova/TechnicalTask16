@@ -34,21 +34,16 @@ for (let element in a3)
 // кнопку.  При  нажатии  кнопки  добавляйте  в  массив  новое  значение  с 
 // соответствующим ключем. Выводите массив на страницу.
 
-const u7_key = document.getElementById('u7-key');
-const u7_value = document.getElementById('u7-value');
-const button_send = document.getElementById('button_send');
+let newArray = new Map();
+let button_send = document.getElementById('button_send');
 
-let a7 = {
-
-}
-
-//Для кнопки  мы назначаем функцию -обработчик
 button_send.onclick = function ()
 {
-    var key1 = u7_key.innerHTML;
-    let value1 = u7_value.innerHTML;
-    console.log(u7_key.innerHTML);
-} 
+    let key1 = document.getElementById('u7-key');
+    let key2 = document.getElementById('u7-value');
+    newArray.set(key1.value, key2.value);
+    console.log(newArray)
+}
 
 // Задача  4. Создайте  массив  a.  Выведите  длину  массива  a. const  a  =  ['Tor',  'Lokki',  'Odin', 
 // 34, 'privet']
