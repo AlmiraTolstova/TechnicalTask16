@@ -7,11 +7,31 @@
 </head>
 <body>
 <!-- Задача 3 -->
+<!-- Вариант решения 1 -->
     <div>
-        <input type="text" name="" id="u7-key">
-        <input type="text" name="" id="u7-value">
-        <button id="button_send">В массив</button>
+        <form onsubmit="my_submit(); return false;">
+            <input type="text" name="" id="u7-key">
+            <input type="text" name="" id="u7-value">
+            <button id="button_send" type="submit">В массив</button>
+            <div>
+                <p id="out_text"></p>
+            </div>
+            
+        </form>
     </div>
+<!-- Вариант решения 2 -->
+    <div>
+        <form onsubmit="return false;">
+            <input type="text" name="" id="u7-key_2">
+            <input type="text" name="" id="u7-value_2">
+            <button id="button_send_2" type="submit">В массив</button>
+            <div>
+                <p id="out_text_2"></p>
+            </div>
+            
+        </form>
+    </div>
+<!-- Задача 5 -->
     <div id="task5">
 
     </div>
